@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Cabin", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height:100vh;
+}
+
+section{
+    width:100%;
+    height: 100vh;
+    position: relative;
+}
+section div.background-section{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    z-index: 0;
+}
+section div.background-section video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+section div.box{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to right, rgb(0,0,0,0.9), transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+section div.conteudo{
+    color: white;
+    font-size: 24px;
+    line-height: 32px;
+}
+section div.conteudo input {
+    width: 100%;
+    padding: 0.6rem;
+    border:2px solid white;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+input::placeholder{
+    text-align: right;
+}
